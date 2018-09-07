@@ -3,9 +3,11 @@ var url = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[
 
 document.addEventListener('DOMContentLoaded', function() {
   getData();
+  document.querySelector('.container__button')
+  .addEventListener('click', function() {
+    getData();
+  });
 });
-
-
 
 var prepareTweet = function(input) {
   var data = input[0];
