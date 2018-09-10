@@ -18,10 +18,9 @@ var prepareTweet = function(input) {
 
   if (!author.length) { return 'Unknown author' };
   var toTweet = 'Quote: ' + quote + ' by ' + author;
+  var tweetLen = toTweet.length;
 
-  if (toTweet.length > 280) { 
-    getData();
-  } else {
+  if (!(tweetLen > 280)) {
     var msg = tweetLink + encodeURIComponent(toTweet);
     document.querySelector('.container__quote').innerText = quote;
     document.querySelector('.container__author').innerText = 'by: ' + author;
