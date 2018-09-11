@@ -1,0 +1,40 @@
+:root { font-size: 16px; }
+
+.container {
+  margin: 0 45px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+  .container__header {
+    font-size: 3rem;
+
+  }
+  .container__quote {
+    font-size:  2.8rem;
+    font-style: italic;
+  }
+  .container__author {
+    font-size: 2.4;
+    font-weight: bold 
+  }
+  .container__button {
+    padding: 5px 10px;
+    font-size: 1.4rem;
+    border: 1px solid black;
+    background-color: transparent;
+  }
+  .container__tweet {
+    padding: 5px 10px;
+    font-size: 1.4rem;
+    border: 1px solid black;
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.footer__content {
+  text-align: center;
+  font-size: 1.5rem;
+  color: darkgray;
+}
