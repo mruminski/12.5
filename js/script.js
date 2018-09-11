@@ -10,15 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 var prepareTweet = function(input) {
-  if (!Array.isArray(input)) {
-    return;
-  } else {
-    data = input[0]; 
-    var element = document.createElement('div');
-    element.innerHTML = data.content;
-    var quote = element.innerText.trim();
-    var author = data.title;
-  }
+  if (!Array.isArray(input)) { return; }
+  data = input[0]; 
+  var element = document.createElement('div');
+  element.innerHTML = data.content;
+  var quote = element.innerText.trim();
+  var author = data.title;
   
   if (!author.length) { return 'Unknown author' };
   var toTweet = 'Quote: ' + quote + ' by ' + author;
