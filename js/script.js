@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 var prepareTweet = function(input) {
-  if (Array.isArray(input)) { var data = input[0]; }
+  var data = 'No data';
+  if (Array.isArray(input)) { data = input[0]; }
   var element = document.createElement('div');
   element.innerHTML = data.content;
   var quote = element.innerText.trim();
